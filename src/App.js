@@ -33,7 +33,7 @@ function App() {
       console.log('Notification permission status:', status);
     });
 
-    if (Notification.permission == 'granted') {
+    if (Notification.permission === 'granted') {
       let sw = await navigator.serviceWorker.register('./sw.js');
 
       let push = await sw.pushManager.subscribe({
