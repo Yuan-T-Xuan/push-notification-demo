@@ -50,7 +50,7 @@ function App() {
       request.setRequestHeader("Authorization", token);
 
       request.onload = function () {
-        console.log('Endpoint created and pushed successfully :)');
+        console.log('Endpoint created and pushed successfully!');
       };
       request.send(JSON.stringify({
         item: JSON.stringify(push)
