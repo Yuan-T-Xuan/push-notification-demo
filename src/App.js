@@ -4,6 +4,7 @@ import { withAuthenticator } from '@aws-amplify/ui-react';
 
 function App() {
   var publicKey = '';
+  navigator.serviceWorker.register('./sw.js');
 
   async function getPublicKey() {
     const user = await Auth.currentAuthenticatedUser();
